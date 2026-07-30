@@ -54,9 +54,5 @@ Abrir `app.ipynb` no Google Colab (runtime GPU). O dataset é baixado do Hugging
 
 ## Limitações
 
-- Classe positiva pequena (158 imagens) limita a generalização; validação externa (ex. RARE26) é trabalho futuro.
+- Classe positiva pequena (158 imagens) limita a generalização; validação externa é trabalho futuro.
 - Contribuição centrada em comparação rigorosa de fine-tuning + protocolo de validação, não em arquitetura nova.
-
-## Contexto
-
-Reconstrução de um trabalho anterior submetido ao SBCAS, corrigindo lacunas metodológicas apontadas na revisão (métrica adequada ao desbalanceamento, pesos derivados e não fixos, validação multi-camada, teste estatístico formal, caracterização das arquiteturas, explicabilidade sem overclaim).
