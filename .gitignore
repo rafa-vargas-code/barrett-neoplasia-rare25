@@ -1,0 +1,7 @@
+rare25_data/
+.cc-history/
+Novas Refs/
+*.pyc
+__pycache__/
+.ipynb_checkpoints/
+.DS_Store

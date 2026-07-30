@@ -1,0 +1,4 @@
+Arquitetura,Parametros (M),Dim. features,FLOPs (G),Inferencia (ms/img)
+ResNet50,23.51,2048,4.11,6.52
+EfficientNet-B0,4.01,1280,0.40,8.81
+MobileNetV2,2.23,1280,0.31,6.04

@@ -1,0 +1,11 @@
+    arquitetura     loss regularizacao  auc_pr_media  auc_pr_std  auc_roc_media  f1_media
+       ResNet50 weighted        cutmix        0.7311      0.0922         0.9161    0.6468
+       ResNet50 weighted         mixup        0.7147      0.0933         0.9097    0.5437
+       ResNet50    focal        cutmix        0.7086      0.0969         0.9194    0.3247
+       ResNet50       ce        cutmix        0.6953      0.0706         0.9055    0.6100
+       ResNet50    focal          none        0.6739      0.1213         0.8956    0.5739
+       ResNet50       ce         mixup        0.6659      0.0777         0.9195    0.5600
+       ResNet50    focal         mixup        0.6625      0.0913         0.9092    0.2260
+       ResNet50 weighted          none        0.6273      0.1596         0.8665    0.6032
+       ResNet50       ce          none        0.6240      0.1347         0.8674    0.5664
+EfficientNet-B0 weighted          none        0.6008      0.0513         0.8744    0.5624

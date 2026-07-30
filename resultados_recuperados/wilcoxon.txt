@@ -1,0 +1,4 @@
+Teste de Wilcoxon (AUC-PR pareado por semente):
+  ResNet50 | weighted | mixup  vs  ResNet50 | ce | cutmix: p=1.0000 (indistinguiveis)
+  ResNet50 | weighted | mixup  vs  ResNet50 | focal | cutmix: p=0.3125 (indistinguiveis)
+  ResNet50 | ce | cutmix  vs  ResNet50 | focal | cutmix: p=0.8125 (indistinguiveis)
