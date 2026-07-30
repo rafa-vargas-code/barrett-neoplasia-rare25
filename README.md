@@ -36,7 +36,7 @@ Notebook único (`app.ipynb`), 22 blocos documentados. Documentação bloco a bl
 
 **Melhor configuração:** ResNet50 + CE ponderada + Mixup — AUC-PR 0,737±0,031, AUC-ROC 0,944±0,011 (baseline RARE25: 0,87).
 
-- Arquitetura é o fator mais decisivo (ResNet50 domina); regularização vem depois (CutMix > Mixup > nenhuma); a função de perda importa pouco.
+- Arquitetura é o fator mais decisivo (ResNet50 domina). O efeito da regularização **depende da arquitetura** (interação): na média das três arquiteturas, *sem* regularização vence (none 0,577 > Mixup 0,507 > CutMix 0,504), porque Mixup/CutMix degradam as redes menores (MobileNetV2, EfficientNet-B0); mas dentro da ResNet50 o CutMix é o melhor (0,712 > Mixup 0,681 > none 0,642). A função de perda importa pouco.
 - Wilcoxon: as três melhores configs são estatisticamente **indistinguíveis** (p > 0,05).
 - Variância de partição (Fase 1, std 0,09–0,16) >> variância de semente (Fase 2, std 0,03–0,07) — evidência de que um split único engana.
 

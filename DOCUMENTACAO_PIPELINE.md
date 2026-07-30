@@ -167,7 +167,12 @@ Variância entre folds alta (std 0,09–0,16) — só ~31 neo por fold de teste.
 
 Efeito médio marginal de arquitetura, loss e regularização na AUC-PR. Base da discussão.
 
-**Status:** executado. Fatores: **arquitetura** é o mais decisivo (ResNet50 >> EfficientNet/MobileNet); **regularização** segundo (cutmix > mixup > none); **loss** importa pouco (weighted/focal/ce próximas no topo). MobileNetV2 sofre forte (focal+cutmix chega a AUC-PR 0,16–0,28). Discussão honesta: loss ponderada não é bala de prata (responde crítica Rev3).
+**Status:** executado. Fatores:
+- **Arquitetura** é o mais decisivo (ResNet50 >> EfficientNet/MobileNet).
+- **Regularização tem efeito de interação com a arquitetura** (não é efeito marginal simples): na média das 3 arquiteturas, `none` vence (0,577 > mixup 0,507 > cutmix 0,504) porque Mixup/CutMix degradam as redes menores; mas **dentro da ResNet50** a ordem inverte (cutmix 0,712 > mixup 0,681 > none 0,642). MobileNetV2 sofre forte com regularização forte (focal+cutmix cai a AUC-PR 0,16–0,28).
+- **Loss** importa pouco (weighted/focal/ce próximas no topo).
+
+Cuidado ao redigir o CBIAS: NÃO afirmar "cutmix > mixup > none" como efeito geral — só vale para a ResNet50. O achado correto é a **interação** arquitetura×regularização. Discussão honesta: loss ponderada não é bala de prata (responde crítica Rev3).
 
 ---
 
