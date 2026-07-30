@@ -2,8 +2,6 @@
 
 Estudo comparativo de estratégias de deep learning para detecção de neoplasia em imagens endoscópicas do esôfago de Barrett, sob forte desbalanceamento de classes. Protocolo experimental com validação em duas camadas, teste estatístico e explicabilidade.
 
-Alvo: **CBIAS 2026** (Congresso Brasileiro de Inteligência Artificial na Saúde).
-
 ## Problema
 
 Adenocarcinoma esofágico tem alta mortalidade; a detecção precoce de neoplasia no esôfago de Barrett é crucial. O dataset é fortemente desbalanceado — a classe positiva (neoplasia) é rara —, o que torna a acurácia enganosa e exige métricas e protocolo adequados.
